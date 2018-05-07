@@ -30,7 +30,7 @@ The first step I took for this project was purchasing the required parts and pie
 
 Once I had purchased all the parts that I needed, I set to work on my first project step, which was setting up an Amazon Developer Account. I did this through the Alexa Voice Service, which allowed me to then set up my Amazon Echo. Starting off the echo creation process, I first had to fill out some basic product information, namely the product name and ID. I then set up some security settings and obtained a security profile ID which would be used to connect to my Raspberry Pi. I also obtained a client ID and a client secret for added security and connection to my Pi device.
 
-![image of code](https://github.com/Crameniaminea/Final-Documentation/blob/master/security.PNG)
+![image of code](https://github.com/Crameniaminea/Final-Documentation/blob/master/security.png)
 
 The next step was to create an origin and return URL to login to my Amazon Alexa Service. In order to connect my Pi device with this service I had to use the Raspberry Pi’s IP address. As a fail-safe incase the IP address did not work, I also allowed the local host access to login as well. This was the last step on the Amazon Developer Account side, so I moved over to the Raspberry Pi once I finished.
 
@@ -38,7 +38,7 @@ The second step for this project was to install the custom OS that I just create
 
 With Git successfully installed, I travelled to the opt folder with “cd /opt.” The next command to run is cloning the AlexaPi GitHub repository. This was done with “sudo git clone https://github.com/alexa-pi/AlexaPi.git.” With all the necessary files installed, I ran the AlexaPi setup script with the command “sudo ./AlexaPi/src/scripts/setup.sh.”
 
-![image of code](https://github.com/Crameniaminea/Final-Documentation/blob/master/install.PNG)
+![image of code](https://github.com/Crameniaminea/Final-Documentation/blob/master/install.png)
 	
 This setup script will ask a bunch of installation questions. The first asks what OS is running, and I hit enter to use the designated OS. Next, it asks what device is being used, so I entered raspberrypi to let it know that the files are being installed on a Raspberry Pi device. The next few questions it asks all relate to the Amazon Developer Account that was created earlier, so I entered all the security information into the setup file. The device then proceeded to install all of the necessary files, which took roughly ten minutes.
 
@@ -60,7 +60,7 @@ Once this installation was finished, I configured some audio settings to enable 
 
 -	Alexa, what is your quest?
 
-![image of code](https://github.com/Crameniaminea/Final-Documentation/blob/master/status.PNG)
+![image of code](https://github.com/Crameniaminea/Final-Documentation/blob/master/status.png)
 
 In reflection, I really enjoyed working on this project for class. There were a few hiccups along the journey, but all of them were easy fixes.  The biggest problem was working around the sound output. At first, I couldn’t get any sound to come from the system, and I realized that the monitor I was using didn’t have any internal speakers. After moving over to a television screen, and the sound continued to not work, I found out that I had to turn up the audio intake on my microphone. Once I had finished that, I was able to communicate to the device and receive a reply.
 
